@@ -1,0 +1,67 @@
+html{
+    position: relative;
+    min-height: 100vh;
+}
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 0 0 0 .3em;
+}
+header{
+    background-color:#B9D8C5;
+    padding: 1.25em;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #FBFBEE;
+}
+
+main {
+    margin: 3em 1.5em 5em 5em;
+}
+main a {
+    text-decoration: none; 
+    color: #657598; 
+  }
+
+main a:hover{
+    color: black;
+}
+
+footer{
+    background-color:#B9D8C5;
+    padding: 1.25em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4em;
+}
+
+.nav-link{
+    color:#676767;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-linked:visited{
+    color: black;
+}
+
+li{
+    color: #657598;
+    text-decoration: none;
+}
+.infogram-embed{
+   width: 55%; 
+}
+
+.photos{
+    background-color:gainsboro;
+    padding: 2em;
+}
+
+.photos img {
+    height: 200px;
+    width: auto;
+}
