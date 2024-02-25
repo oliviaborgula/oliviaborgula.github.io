@@ -6,50 +6,52 @@ html{
 h1{
     font-family:Georgia, 'Times New Roman', Times, serif;
     padding: 0 0 0 .3em;
+    color:#DFE2E6;
 }
 header{
-    background-color:#B9D8C5;
+    background-color:#000000;
     padding: 1.25em;
 }
 
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #FBFBEE;
+    background-color: #FCFDFF;
 }
 
 main {
     margin: 3em 1.5em 5em 5em;
 }
-main a {
-    text-decoration: none; 
-    color: #657598; 
-  }
 
-main a:hover{
-    color: black;
+main .writing-link {
+    color: #657598;
+}
+
+main .writing-link:hover {
+    color: #FF0000;
 }
 
 footer{
-    background-color:#B9D8C5;
-    padding: 1.25em;
+    background-color:#000000;
+    padding: .75em;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 4em;
+    color:#9FA5AA;
 }
 
 .nav-link{
-    color:#676767;
+    color:#9FA5AA;
     text-decoration: none;
 }
 
 .nav-link:hover,
 .nav-linked:visited{
-    color: black;
+    color: #FCFDFF;
 }
 
 li{
-    color: #657598;
+    color: #000000;
     text-decoration: none;
 }
 .infogram-embed{
@@ -65,4 +67,43 @@ li{
     height: 200px;
     width: auto;
 }
+
+
+nav a,
+main a,
+main li {
+    text-decoration: none;
+}
+
+nav a.nav-link {
+    color: #9FA5AA;
+}
+
+nav a.nav-link:hover,
+nav a.nav-linked:visited {
+    color: #FCFDFF; 
+}
+
+main li a {
+    color: #82878B !important; 
+    text-decoration: none !important; 
+}
+
+main li a:hover {
+    color: #000 !important; 
+}
+
+main .writing-link {
+    color: #657598;
+}
+
+main .writing-link:hover {
+    color: #000000; 
+}
+
+.cover-image{
+    width: 350px;
+}
+
+
 
