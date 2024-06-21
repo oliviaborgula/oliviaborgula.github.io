@@ -19,6 +19,7 @@ body{
 }
 
 main {
+    flex: 1;
     margin: 3em 1.5em 5em 5em;
 }
 
@@ -33,7 +34,7 @@ main .writing-link:hover {
 footer{
     background-color:#000000;
     padding: .75em;
-    position: absolute;
+    position: default;
     bottom: 0;
     width: 100%;
     height: 4em;
