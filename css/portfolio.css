@@ -55,9 +55,6 @@ li{
     color: #000000;
     text-decoration: none;
 }
-.infogram-embed{
-   width: 55%; 
-}
 
 .photos{
     background-color:gainsboro;
@@ -106,5 +103,13 @@ main .writing-link:hover {
     width: 350px;
 }
 
+.resume-link {
+    color: gray;
+}
+.resume-link:hover {
+    color: #000000;
+}
 
-
+.resume{
+    margin: 3em 30em 22.95em 5em;
+}
