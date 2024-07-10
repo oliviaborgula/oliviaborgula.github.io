@@ -113,3 +113,10 @@ main .writing-link:hover {
 .resume{
     margin: 3em 30em 22.95em 5em;
 }
+
+.social-icons i {
+    color: black;
+    font-size: 30px;
+    margin-right: .25em;
+
+}
