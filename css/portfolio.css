@@ -51,7 +51,7 @@ footer{
     color: #FCFDFF;
 }
 
-li{
+li {
     color: #000000;
     text-decoration: none;
 }
@@ -66,6 +66,17 @@ li{
     width: auto;
 }
 
+.col-2 {
+    width: 45%;
+}
+
+.bmore-election { 
+    width: 30%
+}
+
+.scatterplot {
+    width: 50%;
+}
 
 nav a,
 main a,
@@ -112,9 +123,7 @@ main .writing-link:hover {
 
 * {box-sizing:border-box}
 
-.active, .dot:hover {
-  background-color: #717171;
-}
+
 
 @keyframes fade {
   from {opacity: .4}
