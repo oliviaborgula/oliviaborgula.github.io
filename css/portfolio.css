@@ -138,3 +138,11 @@ main .writing-link:hover {
 .random-link:hover {
     color: #8ACE00; 
 }
+
+a {
+    color: gray;
+}
+
+a:hover {
+    color: black;
+}
