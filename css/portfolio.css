@@ -56,11 +56,6 @@ li {
     text-decoration: none;
 }
 
-.photos{
-    background-color:gainsboro;
-    padding: 2em;
-}
-
 .photos img {
     height: 200px;
     width: auto;
