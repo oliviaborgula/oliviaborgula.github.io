@@ -141,19 +141,3 @@ a {
 a:hover {
     color: black;
 }
-
-.story-meta {
-    margin-bottom: 4px;
-    font-size: 0.9em;
-    margin-top: 4px;
-  }
-  
-  ul {
-    list-style: none;   
-    padding-left: 0;   
-  }
-  
-  ul li {
-    margin-bottom: 20px; 
-  }
-  
