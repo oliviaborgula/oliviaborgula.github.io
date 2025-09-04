@@ -106,7 +106,9 @@ main .writing-link:hover {
 }
 
 .cover-image{
-    width: 350px;
+    width: 65%;
+    margin-left:70px;
+    margin-top: 45px;
 }
 
 .social-icons i {
