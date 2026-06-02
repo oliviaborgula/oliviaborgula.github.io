@@ -5,10 +5,17 @@ import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa";
 function Layout({ children }) {
   return (
     <div className="page">
+
+      <nav className="nav">
+        <Link to="/">Home</Link>
+        <Link to="/reporting">Data & Enterprise Reporting</Link>
+        <Link to="/graphics">Graphics & Interactive</Link>
+      </nav>
+
       {children}
 
       <footer className="footer">
-  Coded with React, designed by me.
+        Made with React.
       </footer>
     </div>
   );
@@ -17,12 +24,8 @@ function Layout({ children }) {
 function Home() {
   return (
     <Layout>
-      <nav className="nav">
-        <Link to="/reporting">Data & enterprise reporting</Link>
-        <Link to="/graphics">Graphics & interactive</Link>
-      </nav>
 
-      <h1>Hi, I'm Olivia.</h1>
+      <h1>🌸 I'm Olivia.</h1>
 
       <div className="socials">
   <a
@@ -56,26 +59,21 @@ function Home() {
 
       <div className="body-text">
         <p>
-          I graduated from the University of Maryland with degrees in
-          journalism and information science in May. I’m now pursuing a career
-          as a data reporter. I like to use numbers and data visualization to
-          make information more digestible to readers.
+        I'm pursuing a career as a data reporter, and I'm passionate about using numbers and data visualization to make complicated information more digestible for readers.
         </p>
 
         <p>
-          I’ve worked for the San Francisco Chronicle, the Texas Tribune and
-          was a Dow Jones News Fund data reporting intern.
+          I'm currently interning on <a href="https://www.sfchronicle.com/data/" target="_blank">the San Francisco Chronicle's</a> data team. Previously, I was a Capitol Hill reporting fellow with <a href="https://www.texastribune.org/author/olivia-borgula/" target="_blank">the Texas Tribune</a> and a <a href="https://www.dowjonesnewsfund.org/djnfinternships/">Dow Jones News Fund</a> data reporting intern with <a href="https://members.asicentral.com/news" target="_blank">Advertising Specialty Institute</a>, a business trade publication. 
         </p>
 
         <p>
-          While in college, I was managing editor of the student newspaper,
-          The Diamondback, and worked for the Howard Center for Investigative
-          Journalism and Capital News Services’ data and graphics bureau.
+          While in college, I was managing editor of the student newspaper, <a href="https://dbknews.com/" target="_blank">The Diamondback</a>, and worked for <a href="https://cnsmaryland.org/the-howard-center-for-investigative-journalism/">the Howard Center for Investigative Journalism</a>
+           and <a href="https://cnsmaryland.org/author/olborgula/">Capital News Services’</a> data and graphics bureau.
         </p>
 
         <p>
           In my free time, I enjoy reading, going on long walks and drinking
-          coffee and matcha! Feel free to contact me at the links below.
+          coffee and matcha! Feel free to contact me at the links above.
           Thanks for stopping by my portfolio :)
         </p>
       </div>
@@ -83,15 +81,12 @@ function Home() {
   );
 }
 
+
 function Reporting() {
   return (
     <Layout>
-      <nav className="nav">
-        <Link to="/">Back to home</Link>
-        <Link to="/graphics">Graphics & interactive</Link>
-      </nav>
 
-      <h1>Data and enterprise reporting</h1>
+      <h1>📊 Data & Enterprise</h1>
 
       <div className="report-section">
         <h2>The Texas Tribune</h2>
@@ -156,23 +151,26 @@ function Reporting() {
 
 const graphicsProjects = [
   {
-    title: "Javascript(D3) — Tree loss and inequality in Washington, D.C.",
+    title: "Tree loss and inequality in Washington, D.C.",
     link: "https://cnsmaryland.org/2026/05/13/mapping-washington-d-c-s-shade/",
     preview: "/images/trees-preview.mp4",
     type: "video",
+    skills: ["JavaScript", "D3", "HTML", "CSS", "Scrollytelling"]
   },
   {
-    title: "Adobe Illustrator — Plastic waste distribution",
+    title: "Plastic waste distribution",
     link: "/images/Borgula_Plastic_Distribution.png",
     preview: "/images/Borgula_Plastic_Distribution.png",
     type: "image",
+    skills: ["Adobe Illustrator", "Photoshop", "Flourish"]
   },
 
   {
-    title: "Adobe Illustrator — Swan Lake coda",
+    title: "Swan Lake coda",
     link: "/images/Borgula_Fouette.png",
     preview: "/images/Borgula_Fouette.png",
     type: "image",
+    skills: ["Adobe Illustrator", "Photoshop"]
   },
 ];
 
@@ -181,16 +179,8 @@ const graphicsProjects = [
 function Graphics() {
   return (
     <Layout>
-      <nav className="nav">
-        <Link to="/">Back to home</Link>
-        <Link to="/reporting">Data & enterprise reporting</Link>
-      </nav>
 
-      <h1>Graphics and interactive</h1>
-
-      <p className="graphics-subhead">
-        Work in progress. More to come!
-      </p>
+      <h1>🎨 Graphics & Interactive</h1>
 
       <div className="graphics-grid">
         {graphicsProjects.map((project, i) => (
@@ -220,10 +210,21 @@ function Graphics() {
               <img src={project.preview} alt={project.title} />
             )}
 
-            <div className="graphic-info">
-              <div className="graphic-title">{project.title}</div>
-              <div className="graphic-meta">{project.meta}</div>
+          <div className="graphic-info">
+            <div className="graphic-title">{project.title}</div>
+
+            <div className="graphic-meta">
+              {project.meta}
             </div>
+
+            <div className="skill-tags">
+              {project.skills.map((skill) => (
+                <span key={skill} className="skill-tag">
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
           </a>
         ))}
       </div>
