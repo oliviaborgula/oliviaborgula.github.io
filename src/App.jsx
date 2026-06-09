@@ -89,7 +89,7 @@ function Reporting() {
 
       <div className="report-section">
         <h2>The Texas Tribune</h2>
-        <p className="section-desc">Capitol Hill reporting fellowship, Jan - May 2026</p>
+        <p className="section-desc">Capitol Hill reporting fellow, Jan - May 2026</p>
         <ul>
           <li>
             <a href="https://www.texastribune.org/2026/04/01/texas-congress-ai-super-pacs-artificial-intelligence-regulation-2026-midterms/" target="_blank">AI-aligned super PACs are pouring millions into Texas congressional races</a>
@@ -120,6 +120,9 @@ function Reporting() {
         <p className="section-desc">Data and graphics reporter, Jan - May 2025</p>
 
         <ul>
+          <li>
+            <a href="https://cnsmaryland.org/2026/06/09/residents-fear-frederick-county-will-be-the-new-data-center-alley/" target="_blank">Residents fear Frederick County will be the new ‘data center alley’</a>
+          </li>
           <li>
             <a href="https://cnsmaryland.org/2026/03/04/as-data-centers-multiply-marylands-power-grid-struggles-to-keep-up/" target="_blank">As data centers multiply, Maryland’s power grid struggles to keep up</a>
           </li>
