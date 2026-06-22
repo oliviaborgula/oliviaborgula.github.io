@@ -9,7 +9,7 @@ function Layout({ children, className }) {
       <nav className="nav">
         <Link to="/">Home</Link>
         <Link to="/reporting">Data & Enterprise Reporting</Link>
-        <Link to="/graphics">Graphics & Interactive</Link>
+        <Link to="/graphics">Graphics & Data Viz</Link>
       </nav>
 
       {children}
@@ -26,6 +26,8 @@ function Home() {
     <Layout>
 
       <h1>🌸 I'm Olivia.</h1>
+
+/* SOCIAL MEDIA ICONS */
 
       <div className="socials">
   <a
@@ -55,6 +57,9 @@ function Home() {
   <a href="mailto:oliviaborgula@gmail.com">
     <FaEnvelope />
   </a>
+
+  /* INTRO PARAGRAPH */
+
 </div>
 
       <div className="body-text">
@@ -67,7 +72,7 @@ function Home() {
         </p>
 
         <p>
-          While I was there, I was managing editor of the student newspaper, <a href="https://dbknews.com/">The Diamondback</a>, and was a part of <a href="https://cnsmaryland.org/the-howard-center-for-investigative-journalism/" target="_blank">the Howard Center for Investigative Journalism</a> and <a href="https://cnsmaryland.org/author/olborgula/">Capital News Services’</a> data and graphics bureau. I've also held internships with <a href="https://www.baltimoremagazine.com/author/oliviaborgula/" target="_blank">Baltimore Magazine</a>, <a href="https://www.mymcmedia.org/author/oborgula/"target="_blank">Montgomery Community Media</a> and was an undergraduate research assistant with <a href="https://www.digitalengagementlab.org/copy-of-our-innovations-include-ai" target="_blank"> UMD's Digital Engagement Lab</a>, where I studied how news is transmited and received in an increasingly digital era.
+          While I was there, I was managing editor of the student newspaper, <a href="https://dbknews.com/" target="_blank">The Diamondback</a>, and was a part of <a href="https://cnsmaryland.org/the-howard-center-for-investigative-journalism/" target="_blank">the Howard Center for Investigative Journalism</a> and <a href="https://cnsmaryland.org/author/olborgula/">Capital News Services’</a> data and graphics bureau. I've also held internships with <a href="https://www.baltimoremagazine.com/author/oliviaborgula/" target="_blank">Baltimore Magazine</a>, <a href="https://www.mymcmedia.org/author/oborgula/"target="_blank">Montgomery Community Media</a> and was an undergraduate research assistant with <a href="https://www.digitalengagementlab.org/copy-of-our-innovations-include-ai" target="_blank"> UMD's Digital Engagement Lab</a>, where I studied how news is transmited and received in an increasingly digital era.
         </p>
 
         <p>
@@ -80,6 +85,7 @@ function Home() {
   );
 }
 
+ /* DATA AND ENTERPRISE REPORTING PAGE */
 
 function Reporting() {
   return (
@@ -93,9 +99,6 @@ function Reporting() {
         <ul>
           <li>
             <a href="https://www.texastribune.org/2026/04/01/texas-congress-ai-super-pacs-artificial-intelligence-regulation-2026-midterms/" target="_blank">AI-aligned super PACs are pouring millions into Texas congressional races</a>
-          </li>
-          <li>
-            <a href="https://www.texastribune.org/2026/01/28/julie-johnson-palantir-ice-deportation-stock-trades-congress/" target="_blank">Rep. Julie Johnson traded stocks from company that helps Trump’s deportation efforts despite anti-ICE comments</a>
           </li>
           <li>
             <a href="https://www.texastribune.org/2026/04/09/bobby-pulido-quinceaneras-monica-de-la-cruz-south-texas-congress/" target="_blank">In South Texas, quinceañera dig becomes campaign fuel for Tejano musician Bobby Pulido</a>
@@ -160,12 +163,12 @@ function Reporting() {
   );
 }
 
-/* ---------------- GRAPHICS DATA ---------------- */
+/* GRAPHICS PAGE */
 
 const graphicsProjects = [
   {
     title: "Tree loss and inequality in Washington, D.C.",
-    subhead: "Published by Capital News Service, May 2026",
+    subhead: "Published by Capital News Service",
     link: "https://cnsmaryland.org/2026/05/13/mapping-washington-d-c-s-shade/",
     preview: "/images/trees-preview.mp4",
     type: "video",
@@ -173,6 +176,7 @@ const graphicsProjects = [
   },
   {
     title: "Plastic waste distribution",
+    subhead: "Personal project",
     link: "/images/Borgula_Plastic_Distribution.png",
     preview: "/images/Borgula_Plastic_Distribution.png",
     type: "image",
@@ -180,7 +184,36 @@ const graphicsProjects = [
   },
 
   {
+    title: "Apparel imports from China",
+    subhead: "Published by Advertising Specialty Institute",
+    link: "/images/China_Apparel_Imports.png",
+    preview: "/images/China_Apparel_Imports.png",
+    type: "image",
+    skills: ["Flourish"]
+  },
+
+  {
+    title: "Corporate sustainability reports",
+    subhead: "Published by Advertising Specialty Institute",
+    link: "/images/Borgula_Sustainability.png",
+    preview: "/images/Borgula_Sustainability.png",
+    type: "image",
+    skills: ["Python", "Illustrator","Photoshop"]
+  },
+
+  {
+    title: "Trump administration cuts to higher education",
+    subhead: "Personal project",
+    link: "/images/SchoolsGrants.png",
+    preview: "/images/SchoolsGrants.png",
+    type: "image",
+    skills: ["Flourish"]
+  },
+
+
+  {
     title: "Swan Lake coda",
+    subhead: "Produced for data visualization class at the University of Maryland",
     link: "/images/Borgula_Fouette.png",
     preview: "/images/Borgula_Fouette.png",
     type: "image",
@@ -189,7 +222,7 @@ const graphicsProjects = [
 
   {
     title: "MMR vaccination rates",
-    subhead: "Published by Capital News Service, April 2025",
+    subhead: "Published by Capital News Service",
     link: "/images/Borgula_Measles.png",
     preview: "/images/Borgula_Measles.png",
     type: "image",
@@ -197,7 +230,35 @@ const graphicsProjects = [
   },
 
   {
+    title: "Power grid auction",
+    subhead: "Published by Capital News Service",
+    link: "/images/PJM_Auction.png",
+    preview: "/images/PJM_Auction.png",
+    type: "image",
+    skills: ["Datawrapper"]
+  },
+
+  {
+    title: "Data center load projections",
+    subhead: "Published by Capital News Service",
+    link: "/images/DataCenterProjections.png",
+    preview: "/images/DataCenterProjections.png",
+    type: "image",
+    skills: ["Datawrapper"]
+  },
+
+  {
+    title: "Juneteenth holiday around the country",
+    subhead: "Published by Adveritsing Specialty Institute",
+    link: "/images/Juneteenth.png",
+    preview: "/images/Juneteenth.png",
+    type: "image",
+    skills: ["Flourish"]
+  },
+
+  {
     title: "Death row disparities",
+    subhead: "Produced for data visualization class at the University of Maryland",
     link: "/images/Borgula_Death_Row.png",
     preview: "/images/Borgula_Death_Row.png",
     type: "image",
@@ -206,6 +267,7 @@ const graphicsProjects = [
 
   {
     title: "Iris flowers",
+    subhead: "Produced for data visualization class at the University of Maryland",
     link: "/images/Borgula_Iris.png",
     preview: "/images/Borgula_Iris.png",
     type: "image",
@@ -213,16 +275,26 @@ const graphicsProjects = [
   },
 
   {
-    title: "Corporate sustainability reports",
-    subhead: "Published by Advertising Specialty Institute, May 2026",
-    link: "/images/Borgula_Sustainability.png",
-    preview: "/images/Borgula_Sustainability.png",
+    title: "Apparel import levels on different countries",
+    subhead: "Published by Advertising Specialty Institute ",
+    link: "/images/Tariffs_Apparel.png",
+    preview: "/images/Tariffs_Apparel.png",
     type: "image",
-    skills: ["R", "Illustrator","Photoshop"]
+    skills: ["Flourish"]
+  },
+
+  {
+    title: "Trump administration cuts to the healthcare industry",
+    subhead: "Personal Project ",
+    link: "/images/Healthcare_Cuts.png",
+    preview: "/images/Healthcare_Cuts.png",
+    type: "image",
+    skills: ["Datawrapper"]
   },
 
   {
     title: "Rising ocean temperatures",
+    subhead: "Produced for data visualization class at the University of Maryland",
     link: "/images/Borgula_Ocean_Temps.png",
     preview: "/images/Borgula_Ocean_Temps.png",
     type: "image",
@@ -230,14 +302,14 @@ const graphicsProjects = [
   },
 ];
 
-/* ---------------- GRAPHICS PAGE ---------------- */
+/* GRAPHICS PAGE LAYOUT */
 
 function Graphics() {
   return (
     <Layout>
 
       <h1>Graphics & Interactive</h1>
-      <p className="page-subhead">A mix of published stories, infographics and projects.</p>
+      <p className="page-subhead">This page has a mix of my published data visualizations and interactive graphics, as well as a few projects.</p>
 
 
       <div className="graphics-grid">
@@ -287,9 +359,12 @@ function Graphics() {
           </a>
         ))}
       </div>
+
     </Layout>
   );
 }
+
+
 
 /* ---------------- APP ROUTER ---------------- */
 
