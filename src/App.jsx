@@ -32,36 +32,26 @@ function Home() {
 
       {/* SOCIAL MEDIA ICONS */}
       <div className="socials">
-        <a
-          href="https://www.linkedin.com/in/olivia-borgula/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        <a href="https://www.linkedin.com/in/olivia-borgula/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
 
-        <a
-          href="https://github.com/oliviaborgula"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://github.com/oliviaborgula" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
 
-        <a
-          href="https://twitter.com/oliviaborgula"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://twitter.com/oliviaborgula" target="_blank" rel="noopener noreferrer">
           <FaTwitter />
         </a>
 
         <a href="mailto:oliviaborgula@gmail.com">
           <FaEnvelope />
         </a>
+
       </div>
 
-      {/* BODY TEXT */}
+      {/* INTRO PARAGRAPH */}
       <div className="body-text">
 
         <p>
@@ -88,14 +78,14 @@ function Home() {
         </p>
 
         <p>
-          While I was there, I was managing editor of the student newspaper,{" "}
+          I graduated summa cum laude with dual degrees in journalism and information science from the University of Maryland in May. While I was there, I was managing editor of the student newspaper,{" "}
           <a href="https://dbknews.com/" target="_blank" rel="noopener noreferrer">
             The Diamondback
           </a>, and worked with{" "}
           <a href="https://cnsmaryland.org/the-howard-center-for-investigative-journalism/" target="_blank" rel="noopener noreferrer">
             the Howard Center for Investigative Journalism
           </a>{" "}
-          and Capital News Service’s data bureau.
+          and Capital News Service’s data bureau. I've also held internships with <a href="https://www.baltimoremagazine.com/author/oliviaborgula/" target="_blank">Baltimore Magazine</a>, <a href="https://www.mymcmedia.org/author/oborgula/"target="_blank">Montgomery Community Media</a> and was an undergraduate research assistant with <a href="https://www.digitalengagementlab.org/copy-of-our-innovations-include-ai" target="_blank"> UMD's Digital Engagement Lab</a>, where I studied how news is transmited and received in an increasingly digital era.
         </p>
 
         <p>
@@ -118,9 +108,7 @@ function Reporting() {
 
       <div className="report-section">
         <h2>The Texas Tribune</h2>
-        <p className="section-desc">
-          Capitol Hill reporting fellow, Jan - May 2026
-        </p>
+        <p className="section-desc">Capitol Hill reporting fellow, Jan - May 2026</p>
 
         <ul>
           <li>
@@ -137,7 +125,25 @@ function Reporting() {
 
           <li>
             <a href="https://www.texastribune.org/2026/04/20/texas-crypto-currency-pacs-fairshake-menefee-green/" target="_blank" rel="noopener noreferrer">
-              Cryptocurrency industry is on track to surpass 2024 spending
+              Cryptocurrency industry is on track to surpass 2024 spending on Texas midterm races
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.texastribune.org/2026/05/13/texas-democratic-primary-runoff-colin-allred-julie-johnson-congress/" target="_blank" rel="noopener noreferrer">
+              Immigration a flashpoint in Allred-Johnson Democratic runoff
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.texastribune.org/2026/05/22/texas-18th-congressional-district-democratic-primary-corporate-super-pacs-crypto-christian-menefee-al-green/" target="_blank" rel="noopener noreferrer">
+              In Democratic runoff, Reps. Al Green and Christian Menefee clash over influence of big money in politics
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.texastribune.org/2026/05/29/texas-35th-congressional-district-maureen-galindo-johnny-garcia-outside-spending-gop-pac/" target="_blank" rel="noopener noreferrer">
+              Outside spending blitz defined the close of Texas’ District 35 Democratic runoff
             </a>
           </li>
         </ul>
@@ -145,10 +151,7 @@ function Reporting() {
 
       <div className="report-section">
         <h2>Capital News Service</h2>
-
-        <p className="section-desc">
-          Data and graphics reporter, Jan - May 2025
-        </p>
+        <p className="section-desc">Data and graphics reporter, Jan - May 2025</p>
 
         <ul>
           <li>
@@ -160,6 +163,55 @@ function Reporting() {
           <li>
             <a href="https://cnsmaryland.org/2026/03/04/as-data-centers-multiply-marylands-power-grid-struggles-to-keep-up/" target="_blank" rel="noopener noreferrer">
               As data centers multiply, Maryland’s power grid struggles to keep up
+            </a>
+          </li>
+
+          <li>
+            <a href="https://cnsmaryland.org/2025/05/09/heres-how-federal-and-state-action-may-affect-maryland-electric-vehicle-programs/" target="_blank" rel="noopener noreferrer">
+              Here’s how federal and state action may affect Maryland electric vehicle programs
+            </a>
+          </li>
+
+          <li>
+            <a href="https://cnsmaryland.org/2025/04/01/maryland-reported-3-measles-cases-in-march-heres-what-you-need-to-know/" target="_blank" rel="noopener noreferrer">
+              Maryland reported 3 measles cases in March. Here’s what you need to know.
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.thebanner.com/community/public-health/egg-prices-bird-flu-outbreak-GILFRQ4YUZCOXNK5JE7BY6B57U/" target="_blank" rel="noopener noreferrer">
+              Egg prices nationwide hit record high amid bird flu outbreak
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div className="report-section">
+        <h2>Advertising Specialty Institute via Dow Jones</h2>
+        <p className="section-desc">Data reporter, June - Aug 2025</p>
+
+        <ul>
+          <li>
+            <a href="https://members.asicentral.com/news/strategy/july-2025/pride-related-promo-searches-decline-as-brands-scale-back/" target="_blank" rel="noopener noreferrer">
+              Pride-Related Promo Searches Decline as Brands Scale Back
+            </a>
+          </li>
+
+          <li>
+            <a href="https://members.asicentral.com/news/strategy/august-2025/apparel-suppliers-broaden-supply-chains-amid-tariff-concerns/" target="_blank" rel="noopener noreferrer">
+              Apparel Suppliers Broaden Supply Chains Amid Tariff Concerns
+            </a>
+          </li>
+
+          <li>
+            <a href="https://members.asicentral.com/news/strategy/august-2025/art-in-the-age-of-algorithms-the-promise-pitfalls-of-ai-design/" target="_blank" rel="noopener noreferrer">
+              Art in the Age of Algorithms: The Promise & Pitfalls of AI Design
+            </a>
+          </li>
+
+          <li>
+            <a href="https://members.asicentral.com/news/strategy/august-2025/nearly-one-third-of-top-promo-firms-release-annual-sustainability-reports/" target="_blank" rel="noopener noreferrer">
+              Nearly One-Third of Top Promo Firms Release Annual Sustainability Reports
             </a>
           </li>
         </ul>
@@ -188,6 +240,123 @@ const graphicsProjects = [
     preview: "/images/Borgula_Plastic_Distribution.png",
     type: "image",
     skills: ["Illustrator", "Photoshop", "Flourish"]
+  },
+
+  {
+    title: "Apparel imports from China",
+    subhead: "Published by Advertising Specialty Institute",
+    link: "/images/China_Apparel_Imports.png",
+    preview: "/images/China_Apparel_Imports.png",
+    type: "image",
+    skills: ["Flourish"]
+  },
+
+  {
+    title: "Corporate sustainability reports",
+    subhead: "Published by Advertising Specialty Institute",
+    link: "/images/Borgula_Sustainability.png",
+    preview: "/images/Borgula_Sustainability.png",
+    type: "image",
+    skills: ["Python", "Illustrator", "Photoshop"]
+  },
+
+  {
+    title: "Trump administration cuts to higher education",
+    subhead: "Personal project",
+    link: "/images/SchoolsGrants.png",
+    preview: "/images/SchoolsGrants.png",
+    type: "image",
+    skills: ["Flourish"]
+  },
+
+  {
+    title: "Swan Lake coda",
+    subhead: "Produced for data visualization class at the University of Maryland",
+    link: "/images/Borgula_Fouette.png",
+    preview: "/images/Borgula_Fouette.png",
+    type: "image",
+    skills: ["Illustrator", "Photoshop"]
+  },
+
+  {
+    title: "MMR vaccination rates",
+    subhead: "Published by Capital News Service",
+    link: "/images/Borgula_Measles.png",
+    preview: "/images/Borgula_Measles.png",
+    type: "image",
+    skills: ["R", "Illustrator", "Photoshop"]
+  },
+
+  {
+    title: "Power grid auction",
+    subhead: "Published by Capital News Service",
+    link: "/images/PJM_Auction.png",
+    preview: "/images/PJM_Auction.png",
+    type: "image",
+    skills: ["Datawrapper"]
+  },
+
+  {
+    title: "Data center load projections",
+    subhead: "Published by Capital News Service",
+    link: "/images/DataCenterProjections.png",
+    preview: "/images/DataCenterProjections.png",
+    type: "image",
+    skills: ["Datawrapper"]
+  },
+
+  {
+    title: "Juneteenth holiday around the country",
+    subhead: "Published by Advertising Specialty Institute",
+    link: "/images/Juneteenth.png",
+    preview: "/images/Juneteenth.png",
+    type: "image",
+    skills: ["Flourish"]
+  },
+
+  {
+    title: "Death row disparities",
+    subhead: "Produced for data visualization class at the University of Maryland",
+    link: "/images/Borgula_Death_Row.png",
+    preview: "/images/Borgula_Death_Row.png",
+    type: "image",
+    skills: ["Illustrator", "Photoshop", "Sheets"]
+  },
+
+  {
+    title: "Iris flowers",
+    subhead: "Produced for data visualization class at the University of Maryland",
+    link: "/images/Borgula_Iris.png",
+    preview: "/images/Borgula_Iris.png",
+    type: "image",
+    skills: ["RAWGraphs", "Artwork"]
+  },
+
+  {
+    title: "Apparel import levels on different countries",
+    subhead: "Published by Advertising Specialty Institute",
+    link: "/images/Tariffs_Apparel.png",
+    preview: "/images/Tariffs_Apparel.png",
+    type: "image",
+    skills: ["Flourish"]
+  },
+
+  {
+    title: "Trump administration cuts to the healthcare industry",
+    subhead: "Personal Project",
+    link: "/images/Healthcare_Cuts.png",
+    preview: "/images/Healthcare_Cuts.png",
+    type: "image",
+    skills: ["Datawrapper"]
+  },
+
+  {
+    title: "Rising ocean temperatures",
+    subhead: "Produced for data visualization class at the University of Maryland",
+    link: "/images/Borgula_Ocean_Temps.png",
+    preview: "/images/Borgula_Ocean_Temps.png",
+    type: "image",
+    skills: ["Illustrator", "Photoshop"]
   }
 ];
 
@@ -200,7 +369,7 @@ function Graphics() {
       <h1>Graphics & Interactive</h1>
 
       <p className="page-subhead">
-        This page has a mix of my published data visualizations and interactive graphics.
+        This page has a mix of my published data visualizations and interactive graphics, as well as a few projects.
       </p>
 
       <div className="graphics-grid">
