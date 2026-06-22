@@ -91,7 +91,7 @@ function Reporting() {
   return (
     <Layout className="reporting-page">
 
-      <h1>𐙚₊✩‧₊ Data & Enterprise₊✩‧₊˚౨ৎ˚</h1>
+      <h1>Data & Enterprise</h1>
 
       <div className="report-section">
         <h2>The Texas Tribune</h2>
