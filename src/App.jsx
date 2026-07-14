@@ -14,10 +14,6 @@ function Layout({ children, className }) {
       </nav>
 
       {children}
-
-      <footer className="footer">
-        Made with React.
-      </footer>
     </div>
   );
 }
@@ -107,6 +103,28 @@ function Reporting() {
       <h1>Data & Enterprise</h1>
 
       <div className="report-section">
+        <h2>San Francisco Chronicle</h2>
+        <p className="section-desc">Data reporting intern, June - present</p>
+        <ul>
+          <li>
+            <a href="https://drive.google.com/file/d/1PtjnIFk63pg1C51zoYkFwGeTREB3Cbpu/view?usp=sharingg" target="_blank" rel="noopener noreferrer">
+            Exclusive: In the capital of AI, government adoption is all over the place
+            </a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/13nXbSb9abIUQbIwawsz_3EUwXOkcj4Kz/view?usp=sharing/" target="_blank" rel="noopener noreferrer">
+            Wealthier riders once flocked to Bay Area public transit. New data suggests that’s over
+            </a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1_r5s3mbhS3mSOoLaFrNOaj9c41Ga6kAy/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            These Bay Area suburbs are the furthest behind on their housing goals
+            </a>
+          </li>
+        </ul>
+        </div>
+    
+        <div className="report-section">
         <h2>The Texas Tribune</h2>
         <p className="section-desc">Capitol Hill reporting fellow, Jan - May 2026</p>
 
