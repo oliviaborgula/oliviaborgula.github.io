@@ -107,6 +107,16 @@ function Reporting() {
         <p className="section-desc">Data reporting intern, June - present</p>
         <ul>
           <li>
+          <a href="https://drive.google.com/file/d/1_RHNZf32hh3pedld1I19TwnvVWHpe6dW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            Noise complaints are surging in San Francisco. Hundreds are tied to the same corner
+            </a>
+          </li>
+          <li>
+          <a href="https://drive.google.com/file/d/1smlhTcmDS9qe_9NRZPCzdDgbzza0ZOFP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            Is this the least gay city in the Bay Area? Here's what the numbers say
+            </a>
+          </li>
+          <li>
             <a href="https://drive.google.com/file/d/1PtjnIFk63pg1C51zoYkFwGeTREB3Cbpu/view?usp=sharingg" target="_blank" rel="noopener noreferrer">
             Exclusive: In the capital of AI, government adoption is all over the place
             </a>
