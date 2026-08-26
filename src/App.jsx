@@ -107,13 +107,13 @@ function Reporting() {
         <p className="section-desc">Data reporting intern, June - present</p>
         <ul>
           <li>
-          <a href="https://drive.google.com/file/d/1_RHNZf32hh3pedld1I19TwnvVWHpe6dW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            Noise complaints are surging in San Francisco. Hundreds are tied to the same corner
+          <a href="https://drive.google.com/file/d/1ELKbK7kk9MJjfi-LPE-3NVHNvF_u11-E/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          This Bay Area city became a Filipino American haven. Now many can’t afford to stay
             </a>
           </li>
           <li>
-          <a href="https://drive.google.com/file/d/1smlhTcmDS9qe_9NRZPCzdDgbzza0ZOFP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-            Is this the least gay city in the Bay Area? Here's what the numbers say
+          <a href="https://drive.google.com/file/d/1_RHNZf32hh3pedld1I19TwnvVWHpe6dW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            Noise complaints are surging in San Francisco. Hundreds are tied to the same corner
             </a>
           </li>
           <li>
