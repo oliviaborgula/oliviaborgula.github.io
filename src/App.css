@@ -1,24 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+/* ---------------- GLOBAL ---------------- */
 
 html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #144457;
+  background-color: #F7F3EA;
   overflow-x: hidden;
 }
 
 * {
   box-sizing: border-box;
-  color: white;
+  color: #263238;
 }
 
 /* ---------------- LAYOUT ---------------- */
 
 .page {
-  background-color: #144457;
+  background-color: #F7F3EA;
   min-height: 100vh;
   width: 100%;
   padding: 60px 200px;
@@ -43,12 +44,12 @@ html, body, #root {
 
 .nav a {
   text-decoration: none;
-  font-family: 'DM Mono', sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 15px;
   font-weight: 700;
   padding: 4px 8px;
-  background-color: rgba(161, 225, 255, 0.198);
-  color: #8ecae6;
+  background-color: rgb(66, 141, 171);
+  color: #ffffff;
   border-radius: 2px;
   transition: transform 0.2s ease;
 }
@@ -60,10 +61,11 @@ html, body, #root {
 /* ---------------- TYPOGRAPHY ---------------- */
 
 h1 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 40px;
   font-weight: 700;
-  margin: 0 0 55px 0;
+  margin: 0 0 40px 0;
+  color: #263238;
 }
 
 /* ---------------- SOCIALS ---------------- */
@@ -75,6 +77,7 @@ h1 {
 
 .socials a {
   font-size: 30px;
+  color: #263238;
   transition: opacity 0.2s ease;
 }
 
@@ -89,28 +92,30 @@ h1 {
 }
 
 .body-text p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
+font-weight: 300;
   font-size: 15.5px;
   line-height: 1.7;
   margin-bottom: 25px;
+  color: #263238;
 }
 
-
 .body-text a:hover {
-  color: #8ecae6;
+  color: rgb(66, 141, 171);
   text-decoration: none;
   opacity: 0.8;
 }
-
 
 /* ---------------- ANIMATED UNDERLINE ---------------- */
 
 .body-text a,
 .report-section a {
   position: relative;
-  font-family: 'Inter', sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
+font-weight: 300;
   font-size: 15.5px;
   text-decoration: none;
+  color: #263238;
 }
 
 .body-text a::after,
@@ -121,7 +126,7 @@ h1 {
   bottom: -2px;
   width: 0;
   height: 1px;
-  background-color: #8ecae6;
+  background-color: rgb(66, 141, 171);
   transition: width 0.3s ease;
 }
 
@@ -141,31 +146,33 @@ h1 {
 }
 
 .report-section h2 {
-  font-family: 'Inter', monospace;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+font-weight: 300;
   font-size: 16px;
+  color: #263238;
 }
 
 .section-desc {
-  font-family: 'Inter', sans-serif;
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+font-weight: 300;
   font-size: 14px;
-  color: #cecece;
+  color: #66747a;
   margin: -10px 0 12px 0;
 }
 
 .report-section li {
   line-height: 1.6;
+  color: #263238;
 }
 
-
 .report-section a:hover {
-  color: #8ecae6;
+  color: rgb(66, 141, 171);
   opacity: 0.8;
 }
 
 .report-section ul {
   padding-left: 18px;
 }
-
 
 /* ---------------- GRAPHICS GRID ---------------- */
 
@@ -197,33 +204,30 @@ h1 {
 }
 
 .skill-tag {
-  background-color: rgba(161, 225, 255, 0.198);
-  color: #8ecae6;
-
-  font-family: 'DM Mono', monospace;
+  background-color: rgba(20, 68, 87, 0.08);
+  color: rgb(66, 141, 171);
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
   font-size: 11px;
-  font-weight: 700;
-
   padding: 4px 8px;
-
   border-radius: 2px;
 }
 
 .page-subhead {
-  font-family: 'Inter', sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-  color: #cfd8dc;
+  color: #000000;
   margin: -50px 0 40px 0;
 }
 
 .graphic-subhead {
-  font-family: 'Inter', sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 13px;
-  color: #cfd8dc;
+  color: #000000;
   margin-top: 4px;
 }
 
-/* MEDIA */
+/* ---------------- MEDIA ---------------- */
 
 .graphic-media,
 .graphic-card img {
@@ -233,26 +237,17 @@ h1 {
   display: block;
 }
 
-/* TEXT */
+/* ---------------- TEXT ---------------- */
 
 .graphic-title {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 600;
+  color: #263238;
 }
 
 .graphic-meta {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
-  color: #cfd8dc;
-}
-
-/* ---------------- FOOTER ---------------- */
-
-.footer {
-  margin-top: auto;
-  padding-top: 80px;
-  text-align: center;
-  font-family: 'DM Mono', monospace;
-  font-size: 14px;
+  color: #66747a;
 }

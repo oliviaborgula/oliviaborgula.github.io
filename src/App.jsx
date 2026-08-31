@@ -24,7 +24,7 @@ function Home() {
   return (
     <Layout>
 
-      <h1>🌸 I'm Olivia.</h1>
+      <h1>I'm Olivia</h1>
 
       {/* SOCIAL MEDIA ICONS */}
       <div className="socials">
@@ -51,17 +51,17 @@ function Home() {
       <div className="body-text">
 
         <p>
-          I'm pursuing a career as a data reporter, and I'm passionate about using numbers and data visualization to make complicated information more digestible for readers.
+          I'm passionate about finding stories using data and telling them in a way that's accessible. I have experience with data analysis, visualization and reporting.
         </p>
 
         <p>
-          I'm currently a summer 2026 intern with{" "}
+          Most recently, I was a summer 2026 data reporting intern with{" "}
           <a href="https://www.sfchronicle.com/data/" target="_blank" rel="noopener noreferrer">
-            the San Francisco Chronicle's
+            the San Francisco Chronicle.
           </a>{" "}
-          data team. Previously, I was a Capitol Hill reporting fellow with{" "}
+          Previously, I was a Capitol Hill reporting fellow with{" "}
           <a href="https://www.texastribune.org/author/olivia-borgula/" target="_blank" rel="noopener noreferrer">
-            The Texas Tribune
+            the Texas Tribune
           </a>{" "}
           and a{" "}
           <a href="https://www.dowjonesnewsfund.org/djnfinternships/" target="_blank" rel="noopener noreferrer">
@@ -76,12 +76,11 @@ function Home() {
         <p>
           I graduated summa cum laude with dual degrees in journalism and information science from the University of Maryland in May. While I was there, I was managing editor of the student newspaper,{" "}
           <a href="https://dbknews.com/" target="_blank" rel="noopener noreferrer">
-            The Diamondback
-          </a>, and worked with{" "}
+            the Diamondback
+          </a>, and worked on the data team at{" "}
           <a href="https://cnsmaryland.org/the-howard-center-for-investigative-journalism/" target="_blank" rel="noopener noreferrer">
-            the Howard Center for Investigative Journalism
+            the Howard Center for Investigative Journalism.
           </a>{" "}
-          and Capital News Service’s data bureau. I've also held internships with <a href="https://www.baltimoremagazine.com/author/oliviaborgula/" target="_blank">Baltimore Magazine</a>, <a href="https://www.mymcmedia.org/author/oborgula/"target="_blank">Montgomery Community Media</a> and was an undergraduate research assistant with <a href="https://www.digitalengagementlab.org/copy-of-our-innovations-include-ai" target="_blank"> UMD's Digital Engagement Lab</a>, where I studied how news is transmited and received in an increasingly digital era.
         </p>
 
         <p>
@@ -104,7 +103,7 @@ function Reporting() {
 
       <div className="report-section">
         <h2>San Francisco Chronicle</h2>
-        <p className="section-desc">Data reporting intern, June - present</p>
+        <p className="section-desc">Data reporting intern, June - Aug 2026</p>
         <ul>
           <li>
           <a href="https://drive.google.com/file/d/1ELKbK7kk9MJjfi-LPE-3NVHNvF_u11-E/view?usp=sharing" target="_blank" rel="noopener noreferrer">
@@ -395,10 +394,6 @@ function Graphics() {
     <Layout>
 
       <h1>Graphics & Interactive</h1>
-
-      <p className="page-subhead">
-        This page has a mix of my published data visualizations and interactive graphics, as well as a few projects.
-      </p>
 
       <div className="graphics-grid">
         {graphicsProjects.map((project, i) => (
