@@ -68,15 +68,34 @@ h1 {
   color: #263238;
 }
 
+/* ---------------- TYPING TITLE ---------------- */
+
+.typing-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  font-weight: 400;
+  animation: cursor-blink 0.8s steps(1) infinite;
+}
+
+@keyframes cursor-blink {
+  0%, 50% {
+    opacity: 1;
+  }
+
+  51%, 100% {
+    opacity: 0;
+  }
+}
+
 /* ---------------- SOCIALS ---------------- */
 
 .socials {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .socials a {
-  font-size: 30px;
+  font-size: 25px;
   color: #263238;
   transition: opacity 0.2s ease;
 }

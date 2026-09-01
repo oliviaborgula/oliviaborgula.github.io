@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import { FaLinkedin, FaGithub, FaTwitter, FaEnvelope } from "react-icons/fa";
@@ -21,10 +22,52 @@ function Layout({ children, className }) {
 /* ---------------- HOME PAGE ---------------- */
 
 function Home() {
+  const [typedText, setTypedText] = useState("");
+
+  useEffect(() => {
+    const text = "I'm Olivia.";
+    let index = 0;
+
+    const typing = setInterval(() => {
+      setTypedText(text.slice(0, index + 1));
+      index++;
+
+      if (index === text.length) {
+        clearInterval(typing);
+      }
+    }, 120);
+
+    return () => clearInterval(typing);
+  }, []);
+
   return (
     <Layout>
 
-      <h1>I'm Olivia</h1>
+
+
+<div className="hero-title">
+  <div className="pixel-newspaper" aria-hidden="true">
+    <div className="newspaper-paper">
+      <div className="newspaper-name"></div>
+      <div className="newspaper-headline"></div>
+      <div className="newspaper-headline"></div>
+      <div className="newspaper-headline short"></div>
+
+      <div className="newspaper-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span className="short"></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <h1>
+    {typedText}
+    <span className="typing-cursor">|</span>
+  </h1>
+</div>
 
       {/* SOCIAL MEDIA ICONS */}
       <div className="socials">
@@ -49,10 +92,6 @@ function Home() {
 
       {/* INTRO PARAGRAPH */}
       <div className="body-text">
-
-        <p>
-          I'm passionate about finding stories using data and telling them in a way that's accessible. I have experience with data analysis, visualization and reporting.
-        </p>
 
         <p>
           Most recently, I was a summer 2026 data reporting intern with{" "}
@@ -84,7 +123,7 @@ function Home() {
         </p>
 
         <p>
-          In my free time, I enjoy reading, going on long walks and drinking coffee and matcha!
+          Now, I'm pursuing a career in data journalism. In my free time, I enjoy reading, going on long walks and drinking coffee and matcha!
         </p>
 
       </div>
@@ -105,6 +144,11 @@ function Reporting() {
         <h2>San Francisco Chronicle</h2>
         <p className="section-desc">Data reporting intern, June - Aug 2026</p>
         <ul>
+        <li>
+          <a href="https://drive.google.com/file/d/1je3JxWBGX7-Cd2A9YCe47_Hjgd2WZXSN/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Analysis: Tech’s turn to the political right was a mirage
+            </a>
+          </li>
           <li>
           <a href="https://drive.google.com/file/d/1ELKbK7kk9MJjfi-LPE-3NVHNvF_u11-E/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           This Bay Area city became a Filipino American haven. Now many can’t afford to stay
@@ -116,8 +160,18 @@ function Reporting() {
             </a>
           </li>
           <li>
+          <a href="https://drive.google.com/file/d/1XBoVF_yzGRlfSFtKFPi2Uee0EoqTWiOp/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          Donald Trump made historic gains in California in 2024. Can Steve Hilton build on that?
+            </a>
+          </li>
+          <li>
             <a href="https://drive.google.com/file/d/1PtjnIFk63pg1C51zoYkFwGeTREB3Cbpu/view?usp=sharingg" target="_blank" rel="noopener noreferrer">
             Exclusive: In the capital of AI, government adoption is all over the place
+            </a>
+          </li>
+          <li>
+          <a href="https://drive.google.com/file/d/1mUge25HYAYKF-YT6XN9aQkZcjCP68YnC/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+          California cannabis sales have tumbled. Is the market finally turning a corner?
             </a>
           </li>
           <li>
@@ -129,6 +183,10 @@ function Reporting() {
             <a href="https://drive.google.com/file/d/1_r5s3mbhS3mSOoLaFrNOaj9c41Ga6kAy/view?usp=sharing" target="_blank" rel="noopener noreferrer">
             These Bay Area suburbs are the furthest behind on their housing goals
             </a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1ibXrsxqJUfxkm1na8dzqPN05I6LUc2li/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            Where do tech workers live in San Francisco? This neighborhood tops the list</a>
           </li>
         </ul>
         </div>
