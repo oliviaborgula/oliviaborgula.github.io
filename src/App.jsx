@@ -11,7 +11,8 @@ function Layout({ children, className }) {
       <nav className="nav">
         <Link to="/">Home</Link>
         <Link to="/reporting">Data & Enterprise Reporting</Link>
-        <Link to="/graphics">Graphics & Data Viz</Link>
+        <Link to="/data-viz">Data Viz</Link>
+        <Link to="/dev">Dev & Design</Link>
       </nav>
 
       {children}
@@ -306,166 +307,103 @@ function Reporting() {
   );
 }
 
-/* ---------------- GRAPHICS DATA ---------------- */
+/* ---------------- DATA VIZ PAGE ---------------- */
 
-const graphicsProjects = [
+const flourishSandbox = "allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation";
+
+const dataVizVisualizations = [
+  ["Bay Area tech workers skew more Democratic than others in their political giving", "https://datawrapper.dwcdn.net/DV5Vp/10/", 655],
+  ["Share of Bay Area tech company donors who gave primarily to Republicans, in 2020 and 2024", "https://datawrapper.dwcdn.net/ENBQ6/4/", 776],
+  ["Share of donors that gave all or most of their donations to Democrats at selected tech companies", "https://datawrapper.dwcdn.net/ZAcH0/2/", 864],
+  ["Tech workers' giving to Scott Wiener and Connie Chan", "https://datawrapper.dwcdn.net/ffzcD/2/", 437],
+  ["Polls' estimate of support for California gubernatorial candidates", "https://datawrapper.dwcdn.net/psnCD/1/", 345],
+  ["Select groups' support for Xavier Becerra and Kamala Harris", "https://datawrapper.dwcdn.net/XckmB/1/", 410],
+  ["The Filipino population declined more in Bay Area cities with high home values", "https://datawrapper.dwcdn.net/o0HJR/3/", 581],
+  ["Major U.S. cities by share of residents living with a same-sex partner", "https://datawrapper.dwcdn.net/KVonb/3/", 899],
+  ["Fewer UC students are graduating with debt...", "https://datawrapper.dwcdn.net/j4Xaz/1/", 511],
+  ["...Meaning average student loan burdens have declined", "https://datawrapper.dwcdn.net/kQdSM/1/", 532],
+  ["Change in S.F. noise complaints by neighborhood", "https://datawrapper.dwcdn.net/YVGuV/2/", 796],
+  ["Noise complaints in the Western Addition", "https://datawrapper.dwcdn.net/WwIUa/2/", 468],
+  ["Noise complaints in the Western Addition in 2026", "https://datawrapper.dwcdn.net/HMYqw/2/", 470],
+  ["California counties by share of second homes", "https://datawrapper.dwcdn.net/SdJKc/1/", 635],
+  ["Copilot use across S.F. city departments", "https://datawrapper.dwcdn.net/155ln/2/", 985],
+  ["Copilot use by S.F. city employees since July 2025", "https://datawrapper.dwcdn.net/sU0Kx/4/", 514],
+  ["Where tech workers live in S.F.", "https://datawrapper.dwcdn.net/78KGK/2/", 579],
+  ["California cannabis sales", "https://datawrapper.dwcdn.net/CdWCJ/1/", 542],
+  ["Major Bay Area transit systems by riders' income", "https://datawrapper.dwcdn.net/YZCq1/1/", 425],
+  ["Interactive or visual content", "https://flo.uri.sh/story/3192870/embed?auto=1", 748, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/visualisation/24184759/embed?auto=1", 488.141, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/visualisation/23944872/embed?auto=1", 556.125, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/visualisation/24743933/embed?auto=1", 382.922, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/story/3285290/embed?auto=1", 585, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/visualisation/24666029/embed?auto=1", 400, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/story/3285392/embed?auto=1", 583, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/story/3263098/embed?auto=1", 518, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/visualisation/24648166/embed?auto=1", 614.156, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/visualisation/24492322/embed?auto=1", 242.234, flourishSandbox],
+  ["Sustainability reporting waffle", "https://members.asicentral.com/media/jkbf5xwr/sustainabilityreportingwaffle.pdf", 900, undefined, "pdf"],
+  ["Interactive or visual content", "https://flo.uri.sh/story/2967211/embed", 700, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/story/2998877/embed", 750, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/story/3048193/embed", 800, flourishSandbox],
+  ["Interactive or visual content", "https://flo.uri.sh/story/3087991/embed", 900, flourishSandbox],
+  ["Projections for regional electricity demand have increased each year", "https://datawrapper.dwcdn.net/aCu1f/2/", 484],
+  ["Total PJM capacity costs rose in recent auctions", "https://datawrapper.dwcdn.net/4vUNf/2/", 438],
+  ["There are nearly 40 data centers in Maryland", "https://datawrapper.dwcdn.net/UQ7X8/2/", 442]
+];
+
+function DataViz() {
+  return (
+    <Layout className="data-viz-page">
+      <div className="data-viz-grid">
+        {dataVizVisualizations.map(([title, src, height, sandbox]) => (
+          <figure className="data-viz-card" key={src}>
+            <iframe
+              title={title}
+              src={src}
+              scrolling="no"
+              loading="lazy"
+              sandbox={sandbox}
+              style={{ height: `${height}px` }}
+            />
+          </figure>
+        ))}
+      </div>
+    </Layout>
+  );
+}
+
+/* ---------------- DEV PAGE ---------------- */
+
+const developmentProjects = [
   {
-    title: "Tree loss and inequality in Washington, D.C.",
-    subhead: "Published by Capital News Service",
+    title: "Tree canopy coverage in Washington, D.C.",
     link: "https://cnsmaryland.org/2026/05/13/mapping-washington-d-c-s-shade/",
     preview: "/images/trees-preview.mp4",
     type: "video",
-    skills: ["JavaScript", "D3", "HTML", "CSS", "Scrollytelling"]
+    mimeType: "video/mp4",
+    description: "Developed graphics and scrolly-telling in Javascript/D3 to show how tree canopy differs across Washington, D.C., and how that relates to other factors like the urban heat island effect, income and trees removed due to development. This story was published by Capital News Service."
   },
-
   {
-    title: "Plastic waste distribution",
-    subhead: "Personal project",
-    link: "/images/Borgula_Plastic_Distribution.png",
-    preview: "/images/Borgula_Plastic_Distribution.png",
-    type: "image",
-    skills: ["Illustrator", "Photoshop", "Flourish"]
-  },
-
-  {
-    title: "Apparel imports from China",
-    subhead: "Published by Advertising Specialty Institute",
-    link: "/images/China_Apparel_Imports.png",
-    preview: "/images/China_Apparel_Imports.png",
-    type: "image",
-    skills: ["Flourish"]
-  },
-
-  {
-    title: "Corporate sustainability reports",
-    subhead: "Published by Advertising Specialty Institute",
-    link: "/images/Borgula_Sustainability.png",
-    preview: "/images/Borgula_Sustainability.png",
-    type: "image",
-    skills: ["Python", "Illustrator", "Photoshop"]
-  },
-
-  {
-    title: "Trump administration cuts to higher education",
-    subhead: "Personal project",
-    link: "/images/SchoolsGrants.png",
-    preview: "/images/SchoolsGrants.png",
-    type: "image",
-    skills: ["Flourish"]
-  },
-
-  {
-    title: "Swan Lake coda",
-    subhead: "Produced for data visualization class at the University of Maryland",
-    link: "/images/Borgula_Fouette.png",
-    preview: "/images/Borgula_Fouette.png",
-    type: "image",
-    skills: ["Illustrator", "Photoshop"]
-  },
-
-  {
-    title: "MMR vaccination rates",
-    subhead: "Published by Capital News Service",
-    link: "/images/Borgula_Measles.png",
-    preview: "/images/Borgula_Measles.png",
-    type: "image",
-    skills: ["R", "Illustrator", "Photoshop"]
-  },
-
-  {
-    title: "Power grid auction",
-    subhead: "Published by Capital News Service",
-    link: "/images/PJM_Auction.png",
-    preview: "/images/PJM_Auction.png",
-    type: "image",
-    skills: ["Datawrapper"]
-  },
-
-  {
-    title: "Data center load projections",
-    subhead: "Published by Capital News Service",
-    link: "/images/DataCenterProjections.png",
-    preview: "/images/DataCenterProjections.png",
-    type: "image",
-    skills: ["Datawrapper"]
-  },
-
-  {
-    title: "Juneteenth holiday around the country",
-    subhead: "Published by Advertising Specialty Institute",
-    link: "/images/Juneteenth.png",
-    preview: "/images/Juneteenth.png",
-    type: "image",
-    skills: ["Flourish"]
-  },
-
-  {
-    title: "Death row disparities",
-    subhead: "Produced for data visualization class at the University of Maryland",
-    link: "/images/Borgula_Death_Row.png",
-    preview: "/images/Borgula_Death_Row.png",
-    type: "image",
-    skills: ["Illustrator", "Photoshop", "Sheets"]
-  },
-
-  {
-    title: "Iris flowers",
-    subhead: "Produced for data visualization class at the University of Maryland",
-    link: "/images/Borgula_Iris.png",
-    preview: "/images/Borgula_Iris.png",
-    type: "image",
-    skills: ["RAWGraphs", "Artwork"]
-  },
-
-  {
-    title: "Apparel import levels on different countries",
-    subhead: "Published by Advertising Specialty Institute",
-    link: "/images/Tariffs_Apparel.png",
-    preview: "/images/Tariffs_Apparel.png",
-    type: "image",
-    skills: ["Flourish"]
-  },
-
-  {
-    title: "Trump administration cuts to the healthcare industry",
-    subhead: "Personal Project",
-    link: "/images/Healthcare_Cuts.png",
-    preview: "/images/Healthcare_Cuts.png",
-    type: "image",
-    skills: ["Datawrapper"]
-  },
-
-  {
-    title: "Rising ocean temperatures",
-    subhead: "Produced for data visualization class at the University of Maryland",
-    link: "/images/Borgula_Ocean_Temps.png",
-    preview: "/images/Borgula_Ocean_Temps.png",
-    type: "image",
-    skills: ["Illustrator", "Photoshop"]
+    title: "Michigan demographic change tool",
+    link: "https://michigan-demographic-changes.vercel.app/",
+    preview: "/images/michigan-preview.mp4",
+    type: "video",
+    mimeType: "video/mp4",
+    description: "Used React to build a news utility tool allowing users to enter their Michigan address and see how the population, income, education and diversity has changed in their microneighborhood in the last decade. The featured visualization allows readers to explore different Census tracts, and the written analysis section shows that, amid a statewide push for increased population, west Michigan has seen a boom, while other parts of the state have felt a loss in residents."
   }
 ];
 
-/* ---------------- GRAPHICS PAGE ---------------- */
-
-function Graphics() {
+function Dev() {
   return (
-    <Layout>
+    <Layout className="dev-page">
+      <h1>Dev & Design</h1>
 
-      <h1>Graphics & Interactive</h1>
-
-      <div className="graphics-grid">
-        {graphicsProjects.map((project, i) => (
-          <a
-            key={i}
-            className="graphic-card"
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-
-            {project.type === "video" ? (
+      <div className="dev-list">
+        {developmentProjects.map((project) => (
+          <article className="dev-item" key={project.title}>
+            <a className="dev-preview-link" href={project.link} target="_blank" rel="noopener noreferrer">
               <video
-                className="graphic-media"
+                className="dev-preview"
                 muted
                 loop
                 playsInline
@@ -476,29 +414,19 @@ function Graphics() {
                   e.currentTarget.currentTime = 0;
                 }}
               >
-                <source src={project.preview} type="video/mp4" />
+                <source src={project.preview} type={project.mimeType} />
               </video>
-            ) : (
-              <img src={project.preview} alt={project.title} />
-            )}
+            </a>
 
-            <div className="graphic-info">
-              <div className="graphic-title">{project.title}</div>
-              <div className="graphic-subhead">{project.subhead}</div>
-
-              <div className="skill-tags">
-                {project.skills.map((skill) => (
-                  <span key={skill} className="skill-tag">
-                    {skill}
-                  </span>
-                ))}
-              </div>
+            <div className="dev-copy">
+              <h2>
+                <a href={project.link} target="_blank" rel="noopener noreferrer">{project.title}</a>
+              </h2>
+              <p>{project.description}</p>
             </div>
-
-          </a>
+          </article>
         ))}
       </div>
-
     </Layout>
   );
 }
@@ -511,7 +439,9 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/reporting" element={<Reporting />} />
-        <Route path="/graphics" element={<Graphics />} />
+        <Route path="/data-viz" element={<DataViz />} />
+        <Route path="/dev" element={<Dev />} />
+        <Route path="/graphics" element={<Dev />} />
       </Routes>
     </Router>
   );
