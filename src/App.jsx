@@ -390,6 +390,14 @@ const developmentProjects = [
     type: "video",
     mimeType: "video/mp4",
     description: "Used React to build a news utility tool allowing users to enter their Michigan address and see how the population, income, education and diversity has changed in their microneighborhood in the last decade. The featured visualization allows readers to explore different Census tracts, and the written analysis section shows that, amid a statewide push for increased population, west Michigan has seen a boom, while other parts of the state have felt a loss in residents."
+  },
+  {
+    title: "Is love blind?",
+    link: "https://love-is-blind-mauve.vercel.app/",
+    preview: "/images/love-is-blind-preview.gif",
+    type: "image",
+    alt: "Animated preview of the Is love blind scrolly-telling project",
+    description: "A scrolly-telling story about Netflix's hit reality show \"Love is Blind\" that chronicles and visualizes how successful the show has been in creating lasting marriages. The premise of the series is to have participants fall in love behind a wall, without seeing one another, to test whether love is blind. I scraped this data from an official Netflix article and built the front end in React."
   }
 ];
 
@@ -402,20 +410,29 @@ function Dev() {
         {developmentProjects.map((project) => (
           <article className="dev-item" key={project.title}>
             <a className="dev-preview-link" href={project.link} target="_blank" rel="noopener noreferrer">
-              <video
-                className="dev-preview"
-                muted
-                loop
-                playsInline
-                preload="metadata"
-                onMouseEnter={(e) => e.currentTarget.play()}
-                onMouseLeave={(e) => {
-                  e.currentTarget.pause();
-                  e.currentTarget.currentTime = 0;
-                }}
-              >
-                <source src={project.preview} type={project.mimeType} />
-              </video>
+              {project.type === "video" ? (
+                <video
+                  className="dev-preview"
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  onMouseEnter={(e) => e.currentTarget.play()}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.pause();
+                    e.currentTarget.currentTime = 0;
+                  }}
+                >
+                  <source src={project.preview} type={project.mimeType} />
+                </video>
+              ) : (
+                <img
+                  className="dev-preview"
+                  src={project.preview}
+                  alt={project.alt}
+                  loading="lazy"
+                />
+              )}
             </a>
 
             <div className="dev-copy">
