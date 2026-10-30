@@ -95,26 +95,17 @@ function Home() {
       <div className="body-text">
 
         <p>
-          Most recently, I was a summer 2026 data reporting intern with{" "}
+          I'm a data reporter at the Houston Chronicle. Before that, I was a data reporting intern with{" "}
           <a href="https://www.sfchronicle.com/data/" target="_blank" rel="noopener noreferrer">
-            the San Francisco Chronicle.
-          </a>{" "}
-          Previously, I was a Capitol Hill reporting fellow with{" "}
+            the San Francisco Chronicle and
+          </a>{" "}  a reporting fellow with{" "}
           <a href="https://www.texastribune.org/author/olivia-borgula/" target="_blank" rel="noopener noreferrer">
-            the Texas Tribune
-          </a>{" "}
-          and a{" "}
-          <a href="https://www.dowjonesnewsfund.org/djnfinternships/" target="_blank" rel="noopener noreferrer">
-            Dow Jones News Fund
-          </a>{" "}
-          data reporting intern with{" "}
-          <a href="https://members.asicentral.com/news" target="_blank" rel="noopener noreferrer">
-            Advertising Specialty Institute
-          </a>, a business trade publication.
+            the Texas Tribune.
+          </a>
         </p>
 
         <p>
-          I graduated summa cum laude with dual degrees in journalism and information science from the University of Maryland in May. While I was there, I was managing editor of the student newspaper,{" "}
+          I graduated summa cum laude with dual degrees in journalism and information science from the University of Maryland in May 2026. While I was there, I was managing editor of the student newspaper,{" "}
           <a href="https://dbknews.com/" target="_blank" rel="noopener noreferrer">
             the Diamondback
           </a>, and worked on the data team at{" "}
@@ -124,7 +115,7 @@ function Home() {
         </p>
 
         <p>
-          Now, I'm pursuing a career in data journalism. In my free time, I enjoy reading, going on long walks and drinking coffee and matcha!
+          I'm originally from west Michigan. In my free time, I enjoy reading, going on long walks and drinking coffee and matcha!
         </p>
 
       </div>
